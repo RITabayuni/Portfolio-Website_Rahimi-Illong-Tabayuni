@@ -221,7 +221,9 @@ section h2 {
 }
 
 .card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -268,7 +270,7 @@ section h2 {
 .project-gh {
   position: absolute;
   right: 18px;
-  bottom: 18px;
+  top: 18px;
 
   width: 34px;
   height: 34px;
@@ -279,7 +281,9 @@ section h2 {
   align-items: center;
   justify-content: center;
 
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .project-gh:hover {
@@ -292,7 +296,9 @@ section h2 {
 }
 
 .project {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .project:hover {
@@ -341,7 +347,9 @@ section h2 {
   align-items: center;
   justify-content: center;
 
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .footer-socials a:hover {
@@ -397,4 +405,71 @@ section h2 {
   nav.active {
     display: flex;
   }
+}
+
+.certificates {
+  padding-top: 80px;
+}
+
+.cert-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.cert-card {
+  width: 320px;
+  padding: 28px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(180deg, #9db9ff, #eef3ff);
+
+  text-align: center;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cert-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.issuer {
+  font-weight: 600;
+}
+
+.date {
+  color: #555;
+  margin: 12px 0 24px;
+}
+
+.cert-card a {
+  text-decoration: none;
+  color: #4f6fff;
+  font-weight: 600;
+}
+
+.cert-card a:hover {
+  text-decoration: underline;
+}
+
+.cert-card {
+  background: linear-gradient(180deg, #9db9ff 0%, #eef3ff 100%);
 }
