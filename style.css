@@ -473,3 +473,7 @@ section h2 {
 .cert-card {
   background: linear-gradient(180deg, #9db9ff 0%, #eef3ff 100%);
 }
+
+.hero-text h2 {
+  text-align: left;
+}
